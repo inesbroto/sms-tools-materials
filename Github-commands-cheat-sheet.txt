@@ -1,0 +1,21 @@
+# See remotes
+git remote -v
+
+# New branch
+git checkout -b solutions/ex-01
+
+# Commit & push
+git add .
+git commit -m "exercise 01: solution"
+git push -u origin solutions
+
+# Sync main from upstream
+git checkout main
+git fetch upstream
+git merge upstream/main
+git push origin main
+
+# Update your branch with main
+git checkout solutions
+git merge main
+git push origin solutions
